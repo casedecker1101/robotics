@@ -31,10 +31,10 @@ def move_servo(servo, start, end, step = 2, delay = 0.02):
 
 # --- Butter Passing Sequence ---
 def pass_the_butter():
-    print("What is my purpose")
     response = input("What is my purpose:")
     # voice activation logic here
-    print("Oh my God...")
+    if response.lower() == "pass the butter":
+        print("Oh my God...")
 
     # 1. Raise arm
     move_servo(servo1, 90, 40) # shoulder up
